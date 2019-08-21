@@ -7,7 +7,7 @@ package main
 import (
 	"bytes"
 	"fmt"
-	promptpayqr "github.com/kazekim/promptpay-qr-go"
+	"github.com/kazekim/promptpay-qr-go"
 	"image"
 	"image/png"
 	"os"
@@ -15,7 +15,7 @@ import (
 
 func main() {
 
-	qr, err := promptpayqr.QRForTargetWithAmount("0899999999","420" )
+	qr, err := promptpayqr.QRForTargetWithAmount("0899999999","500" )
 
 	if err != nil {
 		panic(err)
