@@ -75,7 +75,7 @@ func (qr *PromptPayQR) GeneratePayload(target string, amount *string) string {
 	}
 
 	dataToCrc := serialize(data) + ID_CRC + "04"
-fmt.Println("data ", dataToCrc)
+
 	data = append(data, f(ID_CRC, checkSum(dataToCrc)))
 
 	return serialize(data)
