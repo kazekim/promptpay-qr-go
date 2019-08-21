@@ -57,12 +57,6 @@ GoLang 1.12.x
 	    }
     }
 
-## Example of Output
-
-![example QR Code](https://github.com/kazekim/promptpay-qr-go/blob/master/cmd/QRImg.png?raw=true)
-
-You can support me by paying with this QR Code too. (LOL)  
-
 ## Contributing
 Everyone can contribute it. Feel free to improve it and make it better.
 
