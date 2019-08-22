@@ -4,7 +4,14 @@
 
 package promptpayqr
 
-import "github.com/skip2/go-qrcode"
+import (
+	"bytes"
+	"fmt"
+	"github.com/skip2/go-qrcode"
+	"image"
+	"image/png"
+	"os"
+)
 
 func QRForTargetWithAmount(target, amount string) (*[]byte, error) {
 
@@ -46,4 +53,20 @@ func QRForTarget(target, amount string) (*[]byte, error) {
 		return nil, err
 	}
 	return &png, nil
+}
+
+func ByteToImagePNG(imgByte []byte, filename string) error {
+	img, _, _ := image.Decode(bytes.NewReader(imgByte))
+	//save the imgByte to file
+	out, err := os.Create(filename)
+	if err != nil {
+		fmt.Println(err)
+		return err
+	}
+	err = png.Encode(out, img)
+	if err != nil {
+		fmt.Println(err)
+		return err
+	}
+	return nil
 }
