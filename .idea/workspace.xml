@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3f7fbdce-ef3d-42c2-873e-ec07d3330606" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/QRImg.png" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/QRImg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qrgenerator.go" beforeDir="false" afterPath="$PROJECT_DIR$/qrgenerator.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,17 +17,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/promptpayqr.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
+            <state relative-caret-position="969">
               <caret line="77" selection-start-line="77" selection-end-line="77" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/qrgenerator.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            <state relative-caret-position="105">
+              <caret line="61" column="56" selection-start-line="61" selection-start-column="56" selection-end-line="61" selection-end-column="56" />
+              <folding>
+                <element signature="e#106#152#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,14 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmd/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
-              <folding>
-                <element signature="e#99#203#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -74,6 +74,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>New</find>
+      <find>QRForTarget</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="/usr/local/Cellar/go/1.12.7/libexec" />
@@ -87,9 +88,9 @@
         <option value="$PROJECT_DIR$/crc16/hash.go" />
         <option value="$PROJECT_DIR$/crc16/util.go" />
         <option value="$PROJECT_DIR$/crc16/crc16.go" />
-        <option value="$PROJECT_DIR$/qrgenerator.go" />
         <option value="$PROJECT_DIR$/promptpayqr.go" />
         <option value="$PROJECT_DIR$/cmd/main.go" />
+        <option value="$PROJECT_DIR$/qrgenerator.go" />
       </list>
     </option>
   </component>
@@ -160,7 +161,7 @@
     <frame x="22" y="23" width="1365" height="808" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532124" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25699168" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -186,20 +187,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/crc16/hash.go" />
-    <entry file="file://$PROJECT_DIR$/promptpayqr.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qrgenerator.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crc16/crc16.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -216,10 +203,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cmd/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+        <state relative-caret-position="150">
+          <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/promptpayqr.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qrgenerator.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="61" column="56" selection-start-line="61" selection-start-column="56" selection-end-line="61" selection-end-column="56" />
           <folding>
-            <element signature="e#99#203#0" expanded="true" />
+            <element signature="e#106#152#0" expanded="true" />
           </folding>
         </state>
       </provider>

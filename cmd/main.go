@@ -15,7 +15,7 @@ import (
 
 func main() {
 
-	qr, err := promptpayqr.QRForTargetWithAmount("0899999999","500" )
+	qr, err := promptpayqr.QRWithPromptpayLogoForTargetWithAmount("0899999999","500" )
 
 	if err != nil {
 		panic(err)
