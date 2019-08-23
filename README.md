@@ -57,6 +57,13 @@ GoLang 1.12.x
 	    }
     }
 
+## QR Code with Promptpay Logo
+
+Please use this function
+
+    qr, err := promptpayqr.QRWithPromptpayLogoForTargetWithAmount("0899999999","500" )
+
+
 ## Contributing
 Everyone can contribute it. Feel free to improve it and make it better.
 
